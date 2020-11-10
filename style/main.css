@@ -1,3 +1,42 @@
+:root{ /* variables of color*/
+    --red:#E50914;
+    --black:#141414;
+    --grey: #AAA;
+    --white: #FFF;
+}
+
+*{ /*reset css*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: grey;
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*is the automatic setting for flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--grey);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--white);
 }
